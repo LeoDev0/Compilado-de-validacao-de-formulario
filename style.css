@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  background: url("images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  transition-duration: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 1px 1px 5px cadetblue;
+}
+
+p {
+  margin-top: 5px;
+}
+
+label {
+  color: white;
+}
+
+select[name="validadeAno"],
+select[name="validadeMes"] {
+  width: 80px;
+}
+
+.container {
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 50px;
+  border-radius: 5px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.divided-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-name {
+  flex: 3;
+  margin-right: 8px;
+}
+.flex-email {
+  flex: 2;
+}
+
+.flex-valor,
+.flex-data {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.flex-cartao {
+  flex: 2;
+}
+
+.flex-titular {
+  flex: 5;
+  margin-right: 8px;
+}
+
+.flex-codigo {
+  flex: 2;
+  margin-right: 8px;
+}
+
+.flex-url {
+  flex: 3;
+  margin-right: 8px;
+}
+
+.flex-celular {
+  flex: 1;
+}
+
+@media (max-width: 700px) {
+  .divided-container {
+    flex-direction: column;
+  }
+
+  .flex-name,
+  .flex-valor,
+  .flex-data,
+  .flex-titular,
+  .flex-codigo,
+  .flex-url {
+    margin-right: 0;
+  }
+}
+
+button {
+  padding: 6px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: orangered;
+  color: white;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: rgb(224, 60, 0);
+}
